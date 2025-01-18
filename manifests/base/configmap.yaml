@@ -5,4 +5,6 @@ metadata:
   namespace: default
 data:
   application.yml: |
-    spring_profiles_active: prod1
+    spring:
+      profiles:
+        active: prod1
