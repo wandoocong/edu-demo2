@@ -31,8 +31,8 @@ spec:
               memory: "2Gi"
           args: [ "--spring.config.location=file:/config/application.yml" ]
           volumeMounts:
-            - mountPath: /config
-              name: application-properties
+            - name: application-properties
+              mountPath: /config/application.yml
               readOnly: true
       volumes:
         - name: application-properties

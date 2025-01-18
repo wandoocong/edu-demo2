@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: edu-user-configmap
+data:
+  application.yml: |    
+    spring.application.name: demo
+    app.run.type: prod1
