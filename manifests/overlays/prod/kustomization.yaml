@@ -2,16 +2,16 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namePrefix: prod-
 configMapGenerator:
-  - files:
-      - application.yml
-    name: edu-user-configmap
-    namespace: "default"
+- files:
+  - application.yml
+  name: edu-user-configmap
+  namespace: default
 resources:
-  - ../../base
+- ../../base
 #  - pvc.yaml
 patchesStrategicMerge:
-  - deployment.yaml
-  - ingress.yaml
+- deployment.yaml
+- ingress.yaml
 images:
-  - name: ydcho0902/k8s-edu
-    newTag: "202411050736"
+- name: ydcho0902/k8s-edu
+  newTag: "202501181503"
