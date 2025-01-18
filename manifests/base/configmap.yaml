@@ -5,5 +5,4 @@ metadata:
   namespace: default
 data:
   application.yml: |
-    spring.application.name: demo
-    app.run.type: prod
+    spring_profiles_active: prod1

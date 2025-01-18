@@ -29,10 +29,9 @@ spec:
             limits:                            # pod가 사용 가능한 최대 리소스
               cpu: "1"
               memory: "2Gi"
-          args: [ "--spring.config.location=file:/config/application.yml" ]
           volumeMounts:
             - name: application-properties
-              mountPath: /config
+              mountPath: /app/config
               readOnly: true
       volumes:
         - name: application-properties

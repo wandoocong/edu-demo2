@@ -4,6 +4,5 @@ metadata:
   name: k8s-edu-user-configmap
   namespace: default
 data:
-  application.yml: |    
-    spring.application.name: demo
-    app.run.type: prod1
+  application.yml: |
+    spring_profiles_active: prod1
