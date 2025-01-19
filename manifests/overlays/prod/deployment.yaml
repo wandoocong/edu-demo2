@@ -27,7 +27,7 @@ spec:
               cpu: "300m"
               memory: "500Mi"
             limits:                            # pod가 사용 가능한 최대 리소스
-              cpu: "00m"
+              cpu: "300m"
               memory: "500Mi"
           volumeMounts:
             - name: application-properties
