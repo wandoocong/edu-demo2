@@ -29,12 +29,12 @@ spec:
             limits:                            # pod가 사용 가능한 최대 리소스
               cpu: "1"
               memory: "2Gi"
-          args: [ "--spring.config.location=file:/app/config/application.yml" ] # Spring Boot에 Config 파일 경로 전달
-          volumeMounts:
-            - name: application-properties
-              mountPath: /app/config/application.yml
-              subPath: application.yml         # 파일 단위로 Mount
-              readOnly: true
+          #args: [ "--spring.config.location=file:/app/config/application.yml" ] # Spring Boot에 Config 파일 경로 전달
+          #volumeMounts:
+          #  - name: application-properties
+          #    mountPath: /app/config/application.yml
+          #    subPath: application.yml         # 파일 단위로 Mount
+          #    readOnly: true
       volumes:
         - name: application-properties
           configMap:
