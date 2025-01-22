@@ -10,7 +10,7 @@ on: workflow_dispatch
 ## 워크플로우 전역에서 사용할 환경 변수  
 env:
   REPO_ACCOUNT: wansookim93
-  IMAGE_NAME: k8s-edu
+  IMAGE_NAME: k8s-goods
 
 ## 실행할 작업 정의 
 jobs:
