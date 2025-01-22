@@ -10,7 +10,7 @@ on: workflow_dispatch
 ## 워크플로우 전역에서 사용할 환경 변수  
 env:
   REPO_ACCOUNT: wansookim93
-  IMAGE_NAME: k8s-goods
+  IMAGE_NAME: k8s-edu
 
 ## 실행할 작업 정의 
 jobs:
@@ -67,7 +67,7 @@ jobs:
       - name: Update Kubernetes resources    # kubernetes 배포 파일에서 docker 이미지 태그 업데이트 
         run: |
           echo "`ls`"
-          cd manifests/base        
+          cd manifests/overlays/prod        
           kustomize edit set image ${{ env.REPO_ACCOUNT }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           cat kustomization.yaml
  # kustomize edit set image : prod DIR 아래 kubernetes 리소스 설정 파일에서 docker 이미지 태그 변경 (예:ydcho0902/k8s-edu:202501191123 로.)
