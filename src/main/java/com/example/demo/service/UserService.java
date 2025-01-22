@@ -24,11 +24,11 @@ public class UserService {
         this.appRunType = appRunType;
     }
 
-    public UserDto getUserByuserNo(String userNo) {
+    public UserDto getUserByuserNo(String goodsNo) {
 
         UserDto userDto = UserDto.builder()
-                .userNo(userNo)
-                .userName(appRunType + "-" + userNo)
+                .goodsNo(goodsNo)
+                .goodsName("goods-" + appRunType + "-" + goodsNo)
                 .build();
         return userDto;
     }

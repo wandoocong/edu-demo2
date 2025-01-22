@@ -21,15 +21,15 @@ import org.springframework.web.bind.annotation.RestController;
  * 2025. 1. 12.        doong2s       최초 생성
  */
 @RestController
-@RequestMapping("/api/v1/user")
+@RequestMapping("/api/v1/goods")
 public class UserRestController {
 
     @Autowired
     private UserService userService;
 
-    @GetMapping("/{userNo}")
-    public ResponseEntity<UserDto> getUserByuserNo(@PathVariable String userNo) {
-        UserDto userDto = userService.getUserByuserNo(userNo);
+    @GetMapping("/{goodsNo}")
+    public ResponseEntity<UserDto> getUserByuserNo(@PathVariable String goodsNo) {
+        UserDto userDto = userService.getUserByuserNo(goodsNo);
         return ResponseEntity.ok(userDto);
     }
 }

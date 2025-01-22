@@ -21,6 +21,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDto {
-    private String userNo;
-    private String userName;
+    private String goodsNo;
+    private String goodsName;
 }
