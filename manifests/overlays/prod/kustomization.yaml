@@ -5,9 +5,9 @@ resources:
 - ../../base
 #  - pvc.yaml
 patchesStrategicMerge:
-- configmap.yaml
 - deployment.yaml
+- service.yaml
 - ingress.yaml
 images:
-- name: ydcho0902/k8s-edu
+- name: wansookim93/k8s-goods
   newTag: "202501191311"
