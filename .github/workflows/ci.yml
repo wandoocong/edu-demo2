@@ -67,7 +67,7 @@ jobs:
       - name: Update Kubernetes resources    # kubernetes 배포 파일에서 docker 이미지 태그 업데이트 
         run: |
           echo "`ls`"
-          cd manifests/overlays/prod        
+          cd manifests/base        
           kustomize edit set image ${{ env.REPO_ACCOUNT }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           cat kustomization.yaml
  # kustomize edit set image : prod DIR 아래 kubernetes 리소스 설정 파일에서 docker 이미지 태그 변경 (예:ydcho0902/k8s-edu:202501191123 로.)
