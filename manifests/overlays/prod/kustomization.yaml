@@ -10,4 +10,4 @@ patchesStrategicMerge:
 - ingress.yaml
 images:
 - name: wansookim93/k8s-goods
-  newTag: "202501191311"
+  newTag: "202501221518"
